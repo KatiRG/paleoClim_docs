@@ -38,3 +38,10 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 		* nc = netCDF4.Dataset('NameOfTheNetcdfFile.nc')
 		* data = nc.variables['NameOfTheVariable'][:,:,:]
 	-launch the script with python
+
+## How does the application works ? 
+
+    1. The menu is displayed by index.html, each button have a specific name that will be used later
+    2. earth.js gives each button specific information to send to product.js such as "overlayType or mode"
+    3. product.js use the informations sent by earth.js to display specific data.It contains multiple functions 
+       (one for each type of data), using the mode's parameter, it knows wich function to use and in wich file to look.
