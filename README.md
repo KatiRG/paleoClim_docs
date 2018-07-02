@@ -30,8 +30,8 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 
 3. Convert the geoJSON to topoJSON using the online tool mapshaper.org [mapshaper.org](http://mapshaper.org/). See the  [documentation](https://github.com/mbloch/mapshaper/wiki/Command-Reference) for a list of command line options you can use to simplify or adjust the default parameters.
 
-4.	Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data) and Scalar.py
-(to convert other data)
+## Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data) and Scalar.py
+    (to convert other data)
 
 	-open the appropriate converting script
 	-change the following statement as you wish :
