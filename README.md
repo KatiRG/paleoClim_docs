@@ -30,24 +30,11 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 
 3. Convert the geoJSON to topoJSON using the online tool mapshaper.org [mapshaper.org](http://mapshaper.org/). See the  [documentation](https://github.com/mbloch/mapshaper/wiki/Command-Reference) for a list of command line options you can use to simplify or adjust the default parameters.
 
-## Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data) and Scalar.py
-    (to convert other data)
+## Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data) and Scalar.py (to convert other data)
 
 	-open the appropriate converting script
 	-change the following statement as you wish :
 		* Data = open("NameOfTheJsonFile.json", "w") 
-		* nc = netCDF4.Dataset('NameOfTheNetcdfFile.nc')*
+		* nc = netCDF4.Dataset('NameOfTheNetcdfFile.nc')
 		* data = nc.variables['NameOfTheVariable'][:,:,:]
 	-launch the script with python
-
-	- **Using QGIS**
-        * Load netCDF as a **Raster** layer (not a Vector Layer!!)
-        
-        * In the Layers Panel, right-click on the file and choose "Save as" then select GTiff (in fact, GTiff is the only option)
-        
-        * On the command line, use `gdal_polygonize.py` to convert the `tif` file to a `shp` file:
-        
-            `$ gdal_polygonize.py file.tif file.shp`
-    
-    - **Using nco**
-    PS to fill in. 
