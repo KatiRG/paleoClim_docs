@@ -57,6 +57,8 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 
 ## Work on the code 
      
+    - **Using QGIS**
+    
     - **on index.html**
         *added modes button (temperature, precipitation and cloudness)
 
