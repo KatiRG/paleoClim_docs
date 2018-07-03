@@ -56,9 +56,7 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
        (one for each type of data), using the mode's parameter, it knows wich function to use and in wich file to look.
 
 ## Work on the code 
-     
-    - **Using QGIS**
-    
+
     - **on index.html**
         *added modes button (temperature, precipitation and cloudness)
 
