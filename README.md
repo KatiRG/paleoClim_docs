@@ -32,13 +32,15 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 
 ##CB
 
-## Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data) and Scalar.py (to convert other data)
+## Create a JSON file from netCDF
+
+Convert NetCDF files to Json files using NonScalar.py (to convert files containing wind or current data, i.e. vectors) and Scalar.py (to convert scalar data)
 
 	-open the appropriate converting script
 
 	-change the following statement as you wish :
 
-		* Data = open("NameOfTheJsonFile.json", "w") 
+	   * Data = open("NameOfTheJsonFile.json", "w") 
 
 		* nc = netCDF4.Dataset('NameOfTheNetcdfFile.nc')
 
@@ -46,7 +48,7 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
 
 	-launch the script with python
 
-## How does the application works ? 
+## How does the application work? 
 
     1. The menu is displayed by index.html, each button have a specific name that will be used later
 
@@ -55,7 +57,7 @@ http://plaintext-productivity.net/2-04-how-to-set-up-sublime-text-for-markdown-e
     3. product.js use the informations sent by earth.js to display specific data.It contains multiple functions 
        (one for each type of data), using the mode's parameter, it knows wich function to use and in wich file to look.
 
-## Work on the code 
+## Customization of the code 
 
     - **on index.html**
         *added modes button (temperature, precipitation and cloudness)
